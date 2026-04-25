@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(255, 228, 164);
+}
+
+.container {
+  padding: 15px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  list-style: none;
+  padding: 20px 5px;
+  border-bottom: 10px solid;
+}
+
+.navbar .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row; /* 가로 방향 나열 */
+  list-style: none;
+  gap: 20px;
+  padding: 10px;
+}
+
+.navbar ul li a {
+  font-size: 20px;
+}
+
+.navbar .logo {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav a:hover {
+  color: gray; /* 글자색을 밝게 변경 */
+}
+
+.box {
+  display: flex;
+  gap: 20px; /* 박스 사이 간격 */
+  padding: 50px;
+  justify-content: center; /* 가운데 정렬 */
+  background-color: rgb(176, 197, 245);
+  border-radius: 12px;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 5px 5px 10px rgb(70, 58, 91);
+}
+
+.box-container {
+  gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3열 */
+  margin: 100px 40px 40px 40px;
+}
+
+@media (max-width: 700px) {
+  .box-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

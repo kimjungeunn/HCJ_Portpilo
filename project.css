@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(255, 228, 164);
+}
+
+.container {
+  width: 100%;
+  padding: 15px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  list-style: none;
+  padding: 20px 5px;
+  border-bottom: 10px solid;
+}
+
+.navbar .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row; /* 가로 방향 나열 */
+  list-style: none;
+  gap: 20px;
+  padding: 10px;
+}
+
+.navbar ul li a {
+  font-size: 20px;
+}
+
+.navbar .logo {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav a:hover {
+  color: gray; /* 글자색을 밝게 변경 */
+}
+
+.box {
+  display: flex;
+  gap: 50px; /* 박스 사이 간격 */
+  padding: 50px 10px 10px 10px;
+  justify-content: center; /* 가운데 정렬 */
+  background-color: rgb(184, 205, 255);
+  border-radius: 12px;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 5px 5px 10px rgb(70, 58, 91);
+}
+
+.box-container {
+  gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3열 */
+  margin: 100px 100px 10px 100px;
+  height: 400px;
+}
+
+@media (max-width: 700px) {
+  .box-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.btn {
+  align-self: center;
+  border: 3px solid black;
+  margin: 80px 5px 5px 5px;
+  padding: 5px 5px;
+  border-radius: 12px;
+}
+
+.box1 {
+  background-color: aliceblue;
+  border-radius: 12px;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  font-size: 15px;
+  width: 300px;
+
+  /* 부모 박스가 flex라면 중앙 정렬을 위해 추가 */
+  margin: auto;
+}
