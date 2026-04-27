@@ -29,7 +29,7 @@ body {
 
 .navbar ul {
   display: flex;
-  flex-direction: row; /* 가로 방향 나열 */
+  flex-direction: row;
   list-style: none;
   gap: 20px;
   padding: 10px;
@@ -51,14 +51,14 @@ a {
 }
 
 .nav a:hover {
-  color: gray; /* 글자색을 밝게 변경 */
+  color: gray;
 }
 
 .box {
   display: flex;
-  gap: 50px; /* 박스 사이 간격 */
+  gap: 50px;
   padding: 50px 10px 10px 10px;
-  justify-content: center; /* 가운데 정렬 */
+  justify-content: center;
   background-color: rgb(184, 205, 255);
   border-radius: 12px;
   flex-direction: column;
@@ -96,6 +96,5 @@ a {
   font-size: 15px;
   width: 300px;
 
-  /* 부모 박스가 flex라면 중앙 정렬을 위해 추가 */
   margin: auto;
 }
